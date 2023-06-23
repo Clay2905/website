@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>OgrodnictwoProjekt</title>
+        
+         <!-- Style do slidera -->
+        <link rel="stylesheet" href="css-slick/slick-theme.css">
+        <link rel="stylesheet" href="css-slick/slick.css">
+         <!--  ----------------  -->
+        
+        
+
+        
+        <link rel="stylesheet" href="style/koszyk_ikonka.css">
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/kontakt.css">
+        <script src="font-size.js"></script> 
+        
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+       
+    </head>
+    <body>
+<div class="container">
+    
+    
+   <!-- Całe menu górne -->
+    
+    <header>
+        
+    <div class="topContainer">
+        <img src="img/logo.png" style="margin-right: 20%;">
+        <div class="cartInfo"><a href="/" onClick="op1('cartPopover'); return false;" class="podgladkoszyka">
+            Podgląd koszyka
+            </a></div>
+            <button class="button" id="increase">Powieksz</button>
+        <button class="button" id="decrease">Zmniejsz</button>
+        <div class="slider-container">
+            <input type="range" min="1" max="100" value="50" class="slider" id="brightnessSlider">
+          </div>
+        <div id="cartPopover" style="display: none;">
+			
+					<div class="simpleCart_items"></div>
+					<div id="cartData" class="clearfix">
+						<div class="left"><strong>Przedmiotów: </strong><span class="simpleCart_quantity"></span></div>
+						<div class="right"><strong>W sumie: </strong><span class="simpleCart_total"></span></div>
+					</div>
+					<div id="popoverButtons" class="clearfix">
+						<a href="koszyk.html" class="hudbtn left">Wyświetl koszyk</a>
+						
+					</div>
+				</div>
+    </div>
+        
+    <nav>
+    <ol class="topMenu">
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="rosliny.html#produkty2">Centrum ogrodnicze</a>
+            <ul class="expandMenu">
+                <li><a href="rosliny.html#produkty2">Rośliny</a></li>
+                <li><a href="rosliny.html#produkty8">Nardzędzia ogrodnicze</a></li>
+                <li><a href="rosliny.html#produkty12">Meble ogrodowe</a></li>
+                <li><a href="rosliny.html#produkty16">Dekoracje ogrodowe</a></li>
+                <li><a href="rosliny.html#produkty18">Kamienie</a></li>
+            </ul>
+        </li>
+        <li><a href="ogrody.html">Ogrody</a></li>
+        <li><a href="index.html">Kontakt</a></li>
+        <li><a href="koszyk.html">Koszyk</a></li>
+    </ol>    
+    </nav>
+    </header>
+    <div class="kontener">
+            <div class="form_box">
+                    <div class="form_contact">
+                
+                
+                            <span class="form-title-2">
+                                  <strong>Pisz śmiało!</strong> Marzeniom o dobrej firmie warto trochę pomóc.
+                              </span>
+                         
+            </div>
+
+                
+                    </div>
+                
+
+
+
+            </div>
+    
+    </div>
+    
+    
+    
+    
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                 <!-- JavaScript do slidera -->
+        <script type="text/javascript" src="js-slick/jquery.js"></script>
+         <!-- ======================================================= -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+        <script src="simpleCart.js"></script>
+        
+        <script>
+            function op1(obj) {
+x=document.getElementById(obj);
+if(x.style.display == "none") x.style.display = "block";
+else x.style.display = "none"
+};    
+        
+        </script>
+        
+        <script src="font-size.js"></script>      
+        
+    </body>
+</html>
+    

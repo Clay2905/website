@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>OgrodnictwoProjekt</title>
+
+       <link rel="stylesheet" href="style/produkty.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="style/koszyk_ikonka.css">
+    </head>
+    <body>
+<div class="container">
+    
+    
+   <!-- Całe menu górne -->
+    
+    <header>
+        
+    <div class="topContainer">
+        <img src="img/logo.png" style="margin-right: 20%;">
+        <div class="cartInfo"><a href="/" onClick="op1('cartPopover'); return false;" class="podgladkoszyka">
+            Podgląd koszyka
+            </a></div>
+            <button class="button" id="increase">Powieksz</button>
+        <button class="button" id="decrease">Zmniejsz</button>
+        <div class="slider-container">
+            <input type="range" min="1" max="100" value="50" class="slider" id="brightnessSlider">
+          
+          </div>
+        
+        <div id="cartPopover" style="display: none;">
+			
+					<div class="simpleCart_items"></div>
+					<div id="cartData" class="clearfix">
+						<div class="left"><strong>Przedmiotów: </strong><span class="simpleCart_quantity"></span></div>
+						<div class="right"><strong>W sumie: </strong><span class="simpleCart_total"></span></div>
+					</div>
+					<div id="popoverButtons" class="clearfix">
+						<a href="koszyk.html" class="hudbtn left">Wyświetl koszyk</a>
+						
+					</div>
+				</div>
+    </div>
+        
+        
+    <nav>
+    <ol class="topMenu">
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="rosliny.html#produkty2">Centrum ogrodnicze</a>
+            <ul class="expandMenu">
+                <li><a href="rosliny.html#produkty2">Rośliny</a></li>
+                <li><a href="rosliny.html#produkty8">Nardzędzia ogrodnicze</a></li>
+                <li><a href="rosliny.html#produkty12">Meble ogrodowe</a></li>
+                <li><a href="rosliny.html#produkty16">Dekoracje ogrodowe</a></li>
+                <li><a href="rosliny.html#produkty18">Kamienie</a></li>
+            </ul>
+        </li>
+        <li><a href="ogrody.html">Ogrody</a></li>
+        <li><a href="index.html">Kontakt</a></li>
+        <li><a href="koszyk.html">Koszyk</a></li>
+      
+    </ol>    
+    </nav>
+    </header>
+    
+       <!-- Całe menu górne -->
+    
+    
+    <div class="mainContent">
+        
+    <div class="topName">
+        <p>Zapraszamy do zapoznania się z naszą ofertą produktów.</p>
+        </div>
+            <div class="controls">
+            <button type="button" data-sort="price:asc">Po cenie rosnąco</button>
+            <button type="button" data-sort="price:desc">Po cenie malejąco</button>
+            <button type="button" data-sort="name:asc">Po nazwie (A-Z)</button>
+            <button type="button" data-sort="name:desc">Po nazwie  (Z-A)</button>
+    </div>
+    
+        
+        
+    <div class="aside"> 
+        
+           <nav>
+    <ol class="asideMenu">
+        <li><a href="index.html">Strona główna</a></li>
+        
+        <li><a href="index.html" onClick="op('rosliny'); return false;">Rodzaje roślin &#8659;</a></li>
+            
+            <div class="expandMenu" id="rosliny" style="display: none">
+                <ul>
+                <li><a href="#produkty2">Rośliny Sadzonkowe</a></li>
+                <li><a href="#produkty4">Drzewka</a></li>
+                <li><a href="#produkty6">Kwiaty</a></li>
+                
+                 </ul>
+            </div>
+        
+        
+        
+        <li><a href="#" onClick="op('narzedzia'); return false;">Nardzędzia ogrodnicze &#8659;</a></li>
+        
+        <div class="expandMenu" id="narzedzia" style="display: none">
+                <ul>
+                <li><a href="#produkty8">Łopaty</a></li>
+                <li><a href="#produkty10">Nożyce</a></li>
+                
+                 </ul>
+            </div>
+        
+        
+        <li><a href="#" onClick="op('meble'); return false;">Meble ogrodowe &#8659;</a></li>
+        <div class="expandMenu" id="meble" style="display: none">
+                <ul>
+                <li><a href="#produkty12">Ławki</a></li>
+                <li><a href="#produkty14">Stoliki</a></li>
+                
+                 </ul>
+            </div>
+        
+        
+        
+        
+        
+        <li><a href="#produkty16">Dekoracje ogrodowe</a></li>
+         <li><a href="#produkty18">Kamienie</a></li>
+    </ol>    
+    </nav>
+        
+        
+        </div>
+        
+    <div class="products">
+        
+        
+        
+        <!-- ROŚLINY -->
+        <!-- Pierwszy kontener z produktami - sadzonki -->
+        
+              <div class="lightbox2" id="produkty2" >
+                    
+
+                             
+                        <div class="item simpleCart_shelfItem mix" data-price="19" data-name="Rozchodnik">
+                         <div class="itemImg">
+                            <img src="produkty_img/sadzonka1.jpg " class="item_image item_thumb" thumb="produkty_img/sadzonka1.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name ">Rozchodnik Grubopędowy</p>
+                                <div class="price"><p class="item_price">19zł</p></div>
+                            <p class="itemOpis">Niziutka roślina o pięknym, dekoracyjnym ulistnieniu i ślicznych, drobnych kwiatach.
+                                Z czasem tworzy efektowny, rozłożysty, bardzo zwarty dywan. Mięsiste, niebiesko-zielone liście. 
+                                </p>
+                                <a href="/" onClick="op('sadzonki1'); return false;">Wymiary.</a>
+                                
+                                            <div id="sadzonki1"  class="wymiary" style="display:none">
+                                            Rozchodnik grubopędowy dorasta do około 5-10 cm wysokości i 20-30 cm szerokości.
+                                </div>
+                            </div> 
+                            <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div> 
+                         
+                  
+                  
+                  <!-- Drugi produkt -->
+                  <div class="item simpleCart_shelfItem mix" data-price="24" data-name="Borówka Amerykańska">
+                         <div class="itemImg">
+                            <img src="produkty_img/sadzonka2.jpg" class="item_image item_thumb" thumb="produkty_img/sadzonka2.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Borówka Amerykańska</p>
+                                <div class="price"><p class="item_price">24zł</p></div>
+                            <p class="itemOpis">
+                                Borówka amerykańska 'Alvar' PBR to licencjonowana odmiana borówki średniej (z ang. half-high hybrids). Powstała w wyniku skrzyżowania odmian Brunswick i June. Otrzymana w Finlandii. Pokrój krzewu jest gęsty, krępy.
+                                </p>
+                                <a href="/" onClick="op('sadzonki2'); return false;">Wymiary.</a>
+                                
+                                            <div id="sadzonki2"  class="wymiary" style="display:none">
+                                            Długość 15 cm, wysokość 25 cm.
+                                </div>
+                            </div>
+                            <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+                  
+                  
+                         
+                       <!-- Trzeci produkt -->
+                         <div class="item simpleCart_shelfItem mix" data-price="78" data-name="Bananowiec Musa Sikkimensis">
+                         <div class="itemImg">
+                            <img src="produkty_img/sadzonka3.jpg" class="item_image item_thumb" thumb="produkty_img/sadzonka3.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Bananowiec Musa Sikkimensis </p>
+                                <div class="price"><p class="item_price">78zł</p></div>
+                            <p class="itemOpis">
+                                Musa Sikkimensis Red Tiger, zwany także Red Darjeeling Banana, jest umiarkowanie twardą odmianą bananowca z wyraźnymi, czerwonymi pasami na liściach. Mimo, że istnieje wiele odmian rodziny Musa to bananowiec, Musa Sikkimensis Red Tiger jest dość wytrzymały w wyniku jego górskich źródeł. 
+                                </p>
+                                <a href="/" onClick="op('sadzonki3'); return false;">Wymiary.</a>
+                                
+                                            <div id="sadzonki3"  class="wymiary" style="display:none">
+                                            Rozchodnik grubopędowy dorasta do około 5-10 cm wysokości i 20-30 cm szerokości.
+                                </div>
+                            </div> 
+                             <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+                  
+       
+                    </div>
+
+        
+        
+        
+<!-- Drugi kontener z produktami - drzewka -->
+
+                    <div class="lightbox2" id="produkty4">
+                        
+                     <!-- ================================= --> 
+                       <div class="item simpleCart_shelfItem mix" data-price="48" data-name="Sosna kosodrzewina">
+                         <div class="itemImg">
+                            <img src="produkty_img/drzewko1.jpg" class="item_image item_thumb" thumb="produkty_img/drzewko1.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Sosna kosodrzewina</p>
+                                <div class="price"><p class="item_price">48zł</p></div>
+                            <p class="itemOpis">
+                                Kolekcja odmian sosny górskiej o różnej specyfice, w tym odmiany o intensywnej żółtej barwie zimowej.
+                                Cechują ją niskie wymagania glebowe i pełna mrozoodporność.<br>
+                                </p>
+                                <a href="/" onClick="op('drzewka1'); return false;">Wymiary.</a>
+                                <a href="/" onClick="op('dostepnosc1'); return false;">Jaka dostepnosc?</a>
+                                            <div id="drzewka1"  class="wymiary" style="display:none">
+                                           Wysokość od 1 do 2 metrów, szerokość 0.5m
+                                </div>
+                                
+                                            <div id="dostepnosc1" class="wymiary" style="display: none">
+                                                                    Dostępnych: 30 sztuk</div>
+                            </div> 
+                           <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+                        
+                         <!-- ================================= --> 
+                        
+                        <div class="item simpleCart_shelfItem mix" data-price="53" data-name="Drzewko iglaste">
+                         <div class="itemImg">
+                            <img src="produkty_img/drzewko2.jpg" class="item_image item_thumb" thumb="produkty_img/drzewko2.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Drzewko iglaste</p>
+                                <div class="price"><p class="item_price">53zł</p></div>
+                            <p class="itemOpis">Zdrowa, mrozoodporna roślina, która posadzona w odpowiednich warunkach, staje się całoroczną ozdobą ogrodu, nie wymagając specjalnej pielęgnacji.  
+                                </p>
+                                <a href="/" onClick="op('drzewka2'); return false;">Wymiary.</a>
+                                <a href="/" onClick="op('dostepnosc2'); return false;">Jaka dostepnosc?</a>
+                                            <div id="drzewka2"  class="wymiary" style="display:none">
+                                            Wysokość 2m, szerokość 1.5m.
+                                </div>
+                                            <div id="dostepnosc2" class="wymiary" style="display: none">
+                                                                    Dostępnych: 25 sztuk</div>
+                            </div> 
+                            <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+                         <!-- ================================= --> 
+                        
+                        <div class="item simpleCart_shelfItem mix" data-price="35" data-name="Świerk kłujący srebrzysty">
+                         <div class="itemImg">
+                            <img src="produkty_img/drzewko3.jpg" class="item_image item_thumb" thumb="produkty_img/drzewko3.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Świerk kłujący srebrzysty </p>
+                                <div class="price"><p class="item_price">35zł</p></div>
+                            <p class="itemOpis">
+                               Drzewo o pięknym, regularnym, stożkowym pokroju.
+                                Gałęzie sztywne. Igły niebieskozielone do srebrzystych, sztywne, kłujące.
+                                Duża odporność na niekorzystne warunki środowiska.<br>
+                                <a href="/" onClick="op('drzewka3'); return false;">Wymiary.</a>
+                                <a href="/" onClick="op('dostepnosc3'); return false;">Jaka dostepnosc?</a>
+                                            <div id="drzewka3"  class="wymiary" style="display:none">
+                                            Osiągające po 10 latach 10-15 m wys.
+                                </div>
+                                <div id="dostepnosc3" class="wymiary" style="display: none">
+                                                                    Dostępnych: 5 sztuk</div>
+                            </div> 
+                            <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+                        
+                         <!-- ================================= --> 
+                  
+                    </div>
+
+
+<!-- trzeci kontener z produktami - kwiaty-->
+        
+        
+
+                    <div class="lightbox2" id="produkty6">
+                        
+                        <!-- ================================= -->
+                        
+                     <div class="item simpleCart_shelfItem mix" data-price="40" data-name="Storczyk">
+                         <div class="itemImg">
+                            <img src="produkty_img/kwiat1.jpg" class="item_image item_thumb" thumb="produkty_img/kwiat1.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Storczyk</p>
+                                <div class="price"><p class="item_price">40zł</p></div>
+                            <p class="itemOpis">
+                                Ćmówka storczyk, wymaga widnego stanowiska, na którym światło powinno być rozproszone, ponieważ bezpośrednio padające promienie słoneczne źle wpływają na rozwój rośliny. 
+                                </p>
+                                <a href="/" onClick="op('kwiaty1'); return false;">Wymiary.</a>
+                                <a href="/" onClick="op('kolory1'); return false;">Zastosowanie</a>
+                                            <div id="kwiaty1"  class="wymiary" style="display:none">
+                                            5-10 cm wysokości i 20-30 cm szerokości.
+                                </div>
+                                <div id="kolory1" class="wymiary" style="display: none">
+                                                  stanowi estetyczną ozdobę ogrodu, balkonu lub tarasu, nadaje się również na kwiat cięty oraz w charakterze dodatku do różnego rodzaju kompozycji florystycznych. </div>
+                            </div> 
+                         <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+                        
+                        <!-- ================================= -->
+                        
+                         <div class="item simpleCart_shelfItem mix" data-price="29" data-name="Azalia japońska">
+                         <div class="itemImg">
+                            <img src="produkty_img/kwiat2.jpg" class="item_image item_thumb" thumb="produkty_img/kwiat2.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Azalia japońska </p>
+                                <div class="price"><p class="item_price">29zł</p></div>
+                            <p class="itemOpis">Niziutka roślina o pięknym, dekoracyjnym ulistnieniu i ślicznych, drobnych kwiatach.
+                                Z czasem tworzy efektowny, rozłożysty, bardzo zwarty dywan. Mięsiste, niebiesko-zielone liście. 
+                                </p>
+                                <a href="/" onClick="op('kwiaty2'); return false;">Wymiary.</a>
+                                <a href="/" onClick="op('kolory2'); return false;">Zastosowanie</a>
+                                            <div id="kwiaty2"  class="wymiary" style="display:none">
+                                            30 cm wysokości, 25 cm szerokości
+                                </div>
+                                <div id="kolory2" class="wymiary" style="display: none">
+                               stanowi estetyczną ozdobę ogrodu, balkonu lub tarasu, nadaje się również na kwiat cięty oraz w charakterze dodatku do różnego rodzaju kompozycji florystycznych.</div>
+                            </div>
+                             <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+                        
+                        <!-- ================================= -->
+                        
+                         <div class="item simpleCart_shelfItem mix" data-price="19" data-name="Fiołek afrykański">
+                         <div class="itemImg">
+                            <img src="produkty_img/kwiat3.jpg" class="item_image item_thumb" thumb="produkty_img/kwiat3.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Fiołek afrykański</p>
+                                <div class="price"><p class="item_price">19zł</p></div>
+                            <p class="itemOpis">Kwitnąca roślina doniczkowa. Kwitnie obficie i długo.
+                                    Kwiaty w różnorodnej kolorystyce.
+                                    Stanowisko widne. Podłoże żyzne - wskazane systematyczne nawożenie.
+                                    Podlewanie - najlepiej podsiąkowo - tak, żeby nie moczyć liści.
+                                </p>
+                                <a href="/" onClick="op('kwiaty3'); return false;">Wymiary.</a>
+                                <a href="/" onClick="op('kolory3'); return false;">Zastosowanie</a>
+                                            <div id="kwiaty3"  class="wymiary" style="display:none">
+                                            Roślina kwitnąca w do. 12cm
+                                </div>
+                                <div id="kolory3" class="wymiary" style="display: none">
+                                  stanowi estetyczną ozdobę ogrodu, balkonu lub tarasu, nadaje się również na kwiat cięty oraz w charakterze dodatku do różnego rodzaju kompozycji florystycznych.</div>
+                            </div> 
+                             <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+                        
+                        <!-- ================================= -->
+                         <div class="item simpleCart_shelfItem mix" data-price="38" data-name="Anturium Andreego">
+                         <div class="itemImg">
+                            <img src="produkty_img/kwiat4.jpg" class="item_image item_thumb" thumb="produkty_img/kwiat4.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Anturium Andreego</p>
+                                <div class="price"><p class="item_price">38zł</p></div>
+                            <p class="itemOpis">Anturium Andreego (Anthurium andreanum) jest rośliną ozdobną o naturalnie błyszczących, ciemnozielonych liściach i pomarańczowych kwiatostanach, choć istnieją także jej białe odmiany. 
+                                </p>
+                                <a href="/" onClick="op('kwiaty4'); return false;">Wymiary.</a>
+                                <a href="/" onClick="op('kolory4'); return false;">Zastosowanie</a>
+                                            <div id="kwiaty4"  class="wymiary" style="display:none">
+                                           Wysokość:50,0 cm
+                                            Szerokość:30,0 cm
+                                </div>
+                                <div id="kolory4" class="wymiary" style="display: none">
+                                    stanowi estetyczną ozdobę ogrodu, balkonu lub tarasu, nadaje się również na kwiat cięty oraz w charakterze dodatku do różnego rodzaju kompozycji florystycznych.</div>
+                            </div>
+                             <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+                        
+                    </div>
+
+      <!-- ================================= -->  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- NARZĘDZIA OGRODNICZE -->  
+        
+        <!-- Pierwszy kkontener z produktami Łopaty-->
+        <div class="lightbox2" id="produkty8">
+                    
+            <!-- ================================= -->
+            <div class="item simpleCart_shelfItem mix" data-price="110" data-name="Szufla do śniegu i ziarna aluminiowa 31 cm">
+                         <div class="itemImg">
+                            <img src="produkty_img/lopata1.jpg" class="item_image item_thumb" thumb="produkty_img/lopata1.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Szufla do śniegu i ziarna aluminiowa 31 cm</p>
+                                <div class="price"><p class="item_price">110zł</p></div>
+                            <p class="itemOpis">
+                                Szufla do śniegu i ziarna aluminiowa 31 cm marki Fiskars.
+Jest to wysokiej jakości szufla, pozwalająca na szybkie i łatwe odśnieżanie.
+Głowica z wysokiej jakości aluminium świetnie sprawdzi się przy rozbijaniu twardych brył śniegu.
+                                </p>
+                                <a href="/" onClick="op('lopaty1'); return false;">Wymiary.</a>
+                                            <div id="lopaty1"  class="wymiary" style="display:none">
+                                            Wysokość:31,0 cm
+                                </div>
+                                
+                            </div> 
+                <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+            
+            <!-- ================================= -->
+            
+            <div class="item simpleCart_shelfItem mix" data-price="59" data-name="Łopata do odśnieżania ILT47">
+                         <div class="itemImg">
+                            <img src="produkty_img/lopata2.jpg" class="item_image item_thumb" thumb="produkty_img/lopata2.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Łopata do odśnieżania ILT47</p>
+                                <div class="price"><p class="item_price">59zł</p></div>
+                            <p class="itemOpis">Łopata do odśnieżania ILT47 marki Prosperplast.
+Jest to wysokiej jakości łopata, pozwalająca na szybkie i łatwe odśnieżanie.
+Posiada metalową krawędź natarcia, która zabezpiecza materiał przed pęknięciem.
+                                </p>
+                                <a href="/" onClick="op('lopaty2'); return false;">Wymiary.</a>
+                               
+                                            <div id="lopaty2"  class="wymiary" style="display:none">
+                                           Wysokość:128,0 cm
+                                </div>
+                   
+                            </div> 
+                <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+            <!-- ================================= -->
+            
+            <div class="item simpleCart_shelfItem mix" data-price="120" data-name="Szufla Solid">
+                         <div class="itemImg">
+                            <img src="produkty_img/lopata3.jpg" class="item_image item_thumb" thumb="produkty_img/lopata3.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                                <p class="itemNazwa item_name">Szufla Solid</p>
+                                <div class="price"><p class="item_price">120zł</p></div>
+                            <p class="itemOpis">Szufla Solid marki Fiskars wyposażona jest w głowicę z doskonałej jakości hartowanej stali, co zapewnia długą i trwałą eksploatację.
+Wygodna rączka z tworzywa w kształcie litery D zapewnia prawidłową postawę podczas pracy i minimalizuje zmęczenie. 
+                                </p>
+                                <a href="/" onClick="op('lopaty3'); return false;">Wymiary.</a>
+                                
+                                            <div id="lopaty3"  class="wymiary" style="display:none">
+                                            Wysokość:126,0 cm
+                                </div>
+                               
+                            </div> 
+                <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+            <!-- ================================= -->
+                        
+                    </div>
+        
+        
+        <!-- drugi kontener z produktami - nożyce -->
+        
+        <div class="lightbox2" id="produkty10">
+            <!-- ================================= -->
+                  <div class="item simpleCart_shelfItem mix" data-price="210" data-name="Nożyce teleskopowe do żywopłotu">
+                         <div class="itemImg">
+                            <img src="produkty_img/nozyce3.jpg" class="item_image item_thumb" thumb="produkty_img/nozyce3.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Nożyce teleskopowe do żywopłotu</p>
+                                <div class="price"><p class="item_price">210zł</p></div>
+                            <p class="itemOpis">Nożyce teleskopowe do żywopłotu Comfort 700 T marki Gardena.
+                                Są to łatwe w obsłudze nożyce przeznaczone do cięcia większych i wyższych żywopłotów.
+                                </p>
+                                <a href="/" onClick="op('nozyce1'); return false;">Wymiary.</a>
+                                            <div id="nozyce1"  class="wymiary" style="display:none">
+                                            Wysokość:5,0 cm  Szerokość:23,0 cm
+                                </div>
+                                
+                            </div> 
+                       <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+            <!-- ================================= -->
+            
+            
+            
+                <div class="item simpleCart_shelfItem mix" data-price="99" data-name="Nożyce do trawy z mechanizmem Serwo">
+                         <div class="itemImg">
+                            <img src="produkty_img/nozyce4.jpg" class="item_image item_thumb" thumb="produkty_img/nozyce4.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Nożyce do trawy z mechanizmem Serwo</p>
+                                <div class="price"><p class="item_price">99zł</p></div>
+                            <p class="itemOpis">Nożyce do trawy z mechanizmem Serwo marki Fiskars pozwalają na proste i skuteczne podcinanie trawy.
+Ergonomiczna i lekka konstrukcja zapewnia komfortową i łatwą pracę. 
+                                </p>
+                                <a href="/" onClick="op('nozyce2'); return false;">Wymiary.</a>
+                                            <div id="nozyce2"  class="wymiary" style="display:none">
+                                          Wysokość:32,2 cm   Szerokość:4,2 cm
+                                </div>
+                                
+                            </div> 
+                     <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+            
+            <!-- ================================= -->
+            
+            
+            <div class="item simpleCart_shelfItem mix" data-price="68" data-name="Nożyce do trawy">
+                         <div class="itemImg">
+                            <img src="produkty_img/nozyce2.jpg" class="item_image item_thumb" thumb="produkty_img/nozyce2.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Nożyce do trawy </p>
+                                <div class="price"><p class="item_price">68zł</p></div>
+                            <p class="itemOpis">Nożyce do trawy, metalowe.
+                        Ostrza pokryte powłoką antyadhezyjną, zapewniają możliwość sprawnego cięcia miękkich roślin, bez obawy zakleszczenia czy zapychania nożyc. 
+                                </p>
+                                <a href="/" onClick="op('nozyce3'); return false;">Wymiary.</a>
+                                            <div id="nozyce3"  class="wymiary" style="display:none">
+                                           Wysokość:31,0 cm    Szerokość:5,0 cm
+                                </div>
+                                
+                            </div> 
+                 <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+            
+                       <!-- ================================= --> 
+                    </div>
+        <!-- ================================= --> 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+         <!-- MEBLE OGRODOWE  --> 
+    
+        <!-- Pierwszy kkontener z produktami ŁAWKI-->
+        <div class="lightbox2" id="produkty12">
+                   
+            <!-- ================================= -->
+            
+            <div class="item simpleCart_shelfItem mix" data-price="520" data-name="Ławka parkowa City">
+                         <div class="itemImg">
+                            <img src="produkty_img/lawka1.jpeg" class="item_image item_thumb" thumb="produkty_img/lawka1.jpeg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Ławka parkowa City</p>
+                                <div class="price"><p class="item_price">520zł</p></div>
+                            <p class="itemOpis">Ławka parkowa City, wykonana z drewna egzotycznego na metalowym stelażu, dzięki czemu cała konstrukcja jest stabilna.
+                        Ławka zapewnia dużą wygodę, wysoką użyteczność. 
+                                </p>
+                                <a href="/" onClick="op('lawka1'); return false;">Wymiary.</a>
+                                            <div id="lawka1"  class="wymiary" style="display:none">
+                                            Wysokość:80,0 cm    Szerokość:122,0 cm
+                                </div>
+                                
+                            </div> 
+                 <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+            <!-- ================================= -->
+            
+            <div class="item simpleCart_shelfItem mix"  data-price="480" data-name="Ławka parkowa z podłokietnikiem">
+                         <div class="itemImg">
+                            <img src="produkty_img/lawka2.jpg" class="item_image item_thumb" thumb="produkty_img/lawka2.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Ławka parkowa z podłokietnikiem</p>
+                                <div class="price"><p class="item_price">480zł</p></div>
+                            <p class="itemOpis">Ławka parkowa z podłokietnikiem wykonana jest z impregnowanego drewna sosnowego.
+                        wygodne, stalowe podłokietniki zwiększają komfort podczas korzystania z niej. 
+                                </p>
+                                <a href="/" onClick="op('lawka2'); return false;">Wymiary.</a>
+                                            <div id="lawka2"  class="wymiary" style="display:none">
+                                          Wysokość:78,0 cm   Szerokość:180,0 cm
+                                </div>
+                                
+                            </div> 
+                 <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+            <!-- ================================= -->
+            
+            <div class="item simpleCart_shelfItem mix" data-price="510" data-name="Ławka Hamilton">
+                         <div class="itemImg">
+                            <img src="produkty_img/lawka3.jpg" class="item_image item_thumb" thumb="produkty_img/lawka3.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Ławka Hamilton</p>
+                                <div class="price"><p class="item_price">510zł</p></div>
+                            <p class="itemOpis">Ławka Hamilton z podłokietnikami, wykonana z żeliwa i drewna liściastego (jakość A). Żeliwne podłokietniki zwiększają komfort podczas korzystania z niej. Ławka jest bardzo wytrzymała i stabilna. Gwarantuje wygodę, pięknie się będzie prezentować przed domem jak i w ogrodzie.  
+                                </p>
+                                <a href="/" onClick="op('lawka3'); return false;">Wymiary.</a>
+                                            <div id="lawka3"  class="wymiary" style="display:none">
+                                           Wysokość:78,0 cm   Szerokość:180,0 cm
+                                </div>
+                                
+                            </div> 
+                 <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+            <!-- ================================= -->
+            
+            <div class="item simpleCart_shelfItem mix" data-price="620" data-name="Ławka ogrodowa drewniana PORTO">
+                         <div class="itemImg">
+                            <img src="produkty_img/lawka4.jpg" class="item_image item_thumb" thumb="produkty_img/lawka4.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Ławka ogrodowa drewniana PORTO</p>
+                                <div class="price"><p class="item_price">620zł</p></div>
+                            <p class="itemOpis">Deski konstrukcyjne Certyfikowane z najwyższej jakości materiału wykonane z świerku skandynawskiego. Produkty wykonane są z wysuszonego komorowo surowca,a ich wytrzymałość zgodna jest z klasą wytrzymałości C 14 oraz C 24.
+                                </p>
+                                <a href="/" onClick="op('lawka4'); return false;">Wymiary.</a>
+                                            <div id="lawka4"  class="wymiary" style="display:none">
+                                            Wysokość:78,0 cm   Szerokość:180,0 cm
+                                </div>
+                                
+                            </div> 
+                 <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+            <!-- ================================= -->
+            
+            <div class="item simpleCart_shelfItem mix"  data-price="299" data-name="Ławka Bonlee 2">
+                         <div class="itemImg">
+                            <img src="produkty_img/lawka5.jpg" class="item_image item_thumb" thumb="produkty_img/lawka5.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Ławka Bonlee 2 </p>
+                                <div class="price"><p class="item_price">299zł</p></div>
+                            <p class="itemOpis">Drewniana ławka ogrodowa z serii Tivoli to propozycja niemieckiej marki Jan Kurtz dedykowana wszystkim tym, którzy lubią meble ogrodowe z naturalnych materiałów. Tym razem wybór projektantów marki padł na drewno tekowe.
+                                <a href="/" onClick="op('lawka5'); return false;">Wymiary.</a>
+                                            <div id="lawka5"  class="wymiary" style="display:none">
+                                            Wysokość:99,0 cm   Szerokość:150,0 cm
+                                </div>
+                                
+                            </div> 
+                 <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+            
+            <!-- ================================= -->
+                        
+                    </div>
+        
+        
+        <!-- drugi kontener z produktami - stoliki -->
+         <div class="lightbox2" id="produkty14">
+             <!-- ================================= -->
+             
+                  <div class="item simpleCart_shelfItem mix"  data-price="105" data-name="Stół Rinjani teak">
+                         <div class="itemImg">
+                            <img src="produkty_img/stolik1.jpg" class="item_image item_thumb" thumb="produkty_img/stolik1.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Stół Rinjani teak</p>
+                                <div class="price"><p class="item_price">105zł</p></div>
+                            <p class="itemOpis">Stół Rinjani wykonany z drewna teakowego. Elegancki duży stół z możliwością zamontowania w nim parasola. 
+                                </p>
+                                <a href="/" onClick="op('stolik1'); return false;">Wymiary.</a>
+                                            <div id="stolik1"  class="wymiary" style="display:none">
+                                             wymiary (dł. x szer. x wys.): 160 x 90 x 76 cm
+                                </div>
+                                
+                            </div> 
+                      <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+             <!-- ================================= -->
+             
+             <div class="item simpleCart_shelfItem mix" data-price="99" data-name="Stolik Montmartre">
+                         <div class="itemImg">
+                            <img src="produkty_img/stolik2.jpg" class="item_image item_thumb" thumb="produkty_img/stolik2.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name"> Stolik Montmartre</p>
+                                <div class="price"><p class="item_price">99zł</p></div>
+                            <p class="itemOpis">Stół z tworzywa sztucznego marki OBI Living Garden. Zachwyca swoim przyciągającym uwagę designem i czystymi liniami. Blat wykonany jest z wysokiej jakości polipropylenu
+                                </p>
+                                <a href="/" onClick="op('stolik2'); return false;">Wymiary.</a>
+                                            <div id="stolik2"  class="wymiary" style="display:none">
+                                            wymiary (dł. x szer. x wys.): 160 x 90 x 76 cm
+                                </div>
+                                
+                            </div> 
+                 <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+             
+             <!-- ================================= -->
+             <!-- ================================= -->
+             
+             <div class="item simpleCart_shelfItem mix" data-price="130" data-name="Stół Haris eukalyptus">
+                         <div class="itemImg">
+                            <img src="produkty_img/stolik3.jpeg" class="item_image item_thumb" thumb="produkty_img/stolik3.jpeg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Stół Haris eukalyptus</p>
+                                <div class="price"><p class="item_price">130zł</p></div>
+                            <p class="itemOpis">Stół Haris marki OBI Living Garden z otworem na parasol. Wykonany z drewna eukaliptusowego oraz aluminium. 
+                                </p>
+                                <a href="/" onClick="op('stolik3'); return false;">Wymiary.</a>
+                                            <div id="stolik3"  class="wymiary" style="display:none">
+                                          wymiary (dł. x szer. x wys.): 160 x 90 x 76 cm
+                                </div>
+                                
+                            </div>
+                 <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+             
+             <!-- ================================= -->
+             
+             <div class="item simpleCart_shelfItem mix" data-price="150" data-name="Stół Benavente">
+                         <div class="itemImg">
+                            <img src="produkty_img/stolik4.jpg" class="item_image item_thumb" thumb="produkty_img/stolik4.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Stół Benavente</p>
+                                <div class="price"><p class="item_price">150zł</p></div>
+                            <p class="itemOpis">Stół Benaventeo  marki OBI Living Garden to propozycja dla wszystkich, którzy chcą miło spędzić czas na świeżym powietrzu. Doskonale sprawdzi się jako wyposażenie tarasu, balkonu czy ogrodu
+                                </p>
+                                <a href="/" onClick="op('stolik4'); return false;">Wymiary.</a>
+                                            <div id="stolik4"  class="wymiary" style="display:none">
+                                            wymiary (dł. x szer. x wys.): 160 x 90 x 76 cm
+                                </div>
+                                
+                            </div> 
+                 <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+             
+                        
+                    </div>
+        
+        <!-- ================================= -->
+        
+        
+        
+        
+        
+        
+        <!-- DEKORACJE OGRODOWE -->
+        
+        <div class="lightbox2" id="produkty16">
+         <!-- ================================= -->
+            
+            <div class="item simpleCart_shelfItem mix" data-price="149" data-name="Kominek z efektem płomienia">
+                         <div class="itemImg">
+                            <img src="produkty_img/dekoracja1.jpg" class="item_image item_thumb" thumb="produkty_img/dekoracja1.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Kominek z efektem płomienia</p>
+                                <div class="price"><p class="item_price">149zł</p></div>
+                            <p class="itemOpis">Kominek z efektem płomienia 6xdiod LED. Oryginalna dekoracja w naturalnych kolorach. Pięknie wkomponuje się w każde wnętrze.
+                                </p>
+                                <a href="/" onClick="op('dekoracja1'); return false;">Przeznaczenie</a>
+                                            <div id="dekoracja1"  class="wymiary" style="display:none">
+                                           Okres świąteczny, bożo narodzeniowy, zimowy.
+                                </div>
+                                
+                            </div> 
+                            <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+            
+            <!-- ================================= -->
+            
+             <div class="item simpleCart_shelfItem mix" data-price="139" data-name="Skrzat ceramiczny biały -czerwony">
+                         <div class="itemImg">
+                            <img src="produkty_img/dekoracja2.jpg" class="item_image item_thumb" thumb="produkty_img/dekoracja2.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Skrzat ceramiczny biały -czerwony</p>
+                                <div class="price"><p class="item_price">139zł</p></div>
+                            <p class="itemOpis">Niziutka roślina o pięknym, dekoracyjnym ulistnieniu i ślicznych, drobnych kwiatach.
+                                Z czasem tworzy efektowny, rozłożysty, bardzo zwarty dywan. Mięsiste, niebiesko-zielone liście. 
+                                </p>
+                                <a href="/" onClick="op('dekoracja2'); return false;">Przeznaczenie</a>
+                                            <div id="dekoracja2"  class="wymiary" style="display:none">
+                                          Okres świąteczny, bożo narodzeniowy, zimowy.
+                                </div>
+                                
+                            </div> 
+                            <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+            <!-- ================================= -->
+            
+             <div class="item simpleCart_shelfItem mix" data-price="199" data-name="Drzewko podświetl 180LED">
+                         <div class="itemImg">
+                            <img src="produkty_img/dekoracja3.jpg" class="item_image item_thumb" thumb="produkty_img/dekoracja3.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Drzewko podświetl 180LED</p>
+                                <div class="price"><p class="item_price">199zł</p></div>
+                            <p class="itemOpis">Drzewko podświetl 180LED 150cm 180L/150cm. Oryginalna dekoracja w naturalnych kolorach. Pięknie wkomponuje się w każde wnętrze. 
+                                </p>
+                                <a href="/" onClick="op('dekoracja3'); return false;">Przeznaczenie</a>
+                                            <div id="dekoracja3"  class="wymiary" style="display:none">
+                                            Okres świąteczny, bożo narodzeniowy, zimowy.
+                                </div>
+                                
+                            </div> 
+                            <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+                        <!-- ================================= -->
+                    </div>
+        
+         <!-- ================================= -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+         <!--KAMIENIE          -->
+        
+           <div class="lightbox2" id="produkty18">
+               
+                 <!-- ================================= -->
+               
+               
+                <div class="item simpleCart_shelfItem mix" data-price="20" data-name="Kamienie polne - ogrodowe">
+                         <div class="itemImg">
+                            <img src="produkty_img/kamienie1.jpg" class="item_image item_thumb" thumb="produkty_img/kamienie1.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Kamienie polne - ogrodowe</p>
+                                <div class="price"><p class="item_price">20zł</p></div>
+                            <p class="itemOpis">Kamienie polne, firmy Zew.
+Stanowią doskonały element dekoracyjny: skalniaków, zieleńców, donic, ogrodów japońskich itp. Znakomicie sprawdzą się też jako zamiennik kory ogrodowej lub budulec elementów małej architektury, jak oczka wodne, ścieżki ogrodowe i inne. 
+                                </p>
+                                <a href="/" onClick="op('kamienie1'); return false;">Waga</a>
+                                            <div id="kamienie1"  class="wymiary" style="display:none">
+                                           Waga: 1kg.
+                                </div>
+                                
+                            </div> 
+                            <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+               
+                 <!-- ================================= -->
+               
+               
+               <div class="item simpleCart_shelfItem mix" data-price="30" data-name="Kamienie ogrodowe - ozdobne">
+                         <div class="itemImg">
+                            <img src="produkty_img/kamienie2.jpg" class="item_image item_thumb" thumb="produkty_img/kamienie2.jpg">
+                            </div>
+                            <div class="itemDescription">
+                            
+                            <p class="itemNazwa item_name">Kamienie ogrodowe - ozdobne</p>
+                                <div class="price"><p class="item_price">30zł</p></div>
+                            <p class="itemOpis">Kamienie o nieregularnym kształcie do wszelkiego rodzaju dekoracji szklanych naczyń, lasów w butelce, donic, jak również do tworzenia kompozycji mozaikowych, które mogą być ozdobą wielu wnętrz takich jak łazienki, baseny, spa.  
+                                </p>
+                                <a href="/" onClick="op('kamienie2'); return false;">Waga</a>
+                                            <div id="kamienie2"  class="wymiary" style="display:none">
+                                            Waga: 500 g.
+
+                                </div>
+                                
+                            </div> 
+                            <input type="text" value="1" class="item_Quantity">
+                            <a class="item_add" href="javascript:;">Dodaj do koszyka</a>
+                         </div>
+                 <!-- ================================= -->
+               
+               
+
+               
+                        
+                    </div>
+        
+      <!-- ================================= -->
+        
+        
+        
+        
+        
+        
+    </div>
+    
+ 
+    
+
+    
+    </div>
+ <!-- Kontakt  -->
+ <div class="contact">
+    <p id="skontaktuj"  class="para" >Skontaktuj się z nami</p>
+    <p id="napisz"  class="para" >Napisz do nas<br>
+       <span class="mniejsze" ><br>Kgabrys2905@gmail.com <br><br>+48 888 356 311</span> </p>
+    <p id="dane" class="para" >Nasze dane<br>
+        <span class="mniejsze" ><br>Jakub Gabryś<br>Centrum Ogrody Gabryś <br>Chorzowska 5<br>44-100 Gliwice</span> </p>
+        
+    </div>
+    
+    
+    <!-- =================== -->
+    
+    
+    <!-- Mapy google -->
+ <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=zsti&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div>
+    <!-- =================== -->
+    
+    
+    
+    <!-- Stopka -->
+    
+    <footer class="stopka">
+    
+  <p class="para">© 2023 Jakub Gabryś</p>  
+    
+    
+    </footer>
+    
+    
+    
+    <script type="text/javascript" src="js-slick/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+        <script src="simpleCart.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    
+    <script>
+function op(obj) {
+x=document.getElementById(obj);
+if(x.style.display == "none") x.style.display = "flex";
+else x.style.display = "none"
+};
+        
+    function op1(obj) {
+x=document.getElementById(obj);
+if(x.style.display == "none") x.style.display = "block";
+else x.style.display = "none"
+};    
+        
+        
+        
+        
+var array1 = [];
+
+function show_hide(e){
+ 
+    
+    var target_universal = (e.target.id.split(''));
+  
+    array1[target_universal[1]]+='a';
+
+    if(array1[target_universal[1]].length-9==2){
+        array1[target_universal[1]] = array1[target_universal[1]].slice(0,-2);
+    }
+    else
+    {
+        var scope = localStorage.getItem('ess'+target_universal[1]).length;   
+    }
+};
+</script>
+    
+    
+
+    <script>
+            
+ 
+            var containerEl = document.querySelector("#produkty2");
+            var containerEl2 = document.querySelector("#produkty4");
+            var containerEl3 = document.querySelector("#produkty6");
+            var containerEl4 = document.querySelector("#produkty8");
+            var containerEl5 = document.querySelector("#produkty10");
+            var containerEl6 = document.querySelector("#produkty12");
+            var containerEl7 = document.querySelector("#produkty14");
+            var containerEl8 = document.querySelector("#produkty16");
+            var containerEl9 = document.querySelector("#produkty18");
+        
+            var mixer = mixitup(containerEl);
+            var mixer2 = mixitup(containerEl2);
+            var mixer3 = mixitup(containerEl3);
+            var mixer4 = mixitup(containerEl4);
+            var mixer5 = mixitup(containerEl5);
+            var mixer6 = mixitup(containerEl6);
+            var mixer7 = mixitup(containerEl7);
+            var mixer8 = mixitup(containerEl8);
+            var mixer9 = mixitup(containerEl9); 
+        
+
+        </script>
+        <script src="font-size.js"></script> 
+    
+</div>
+        
+        
+        
+    </body>
+    
+    
+</html>
+    
+    
+    
+    
+    

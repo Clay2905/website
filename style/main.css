@@ -1,0 +1,324 @@
+body
+{
+   max-width: 1920px;
+}
+body *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ZCOOL XiaoWei', serif;
+    
+}
+.container
+{
+    width: 100%;
+    height: auto;
+}
+header
+{
+    width: 100%;
+    height: auto;
+  
+ 
+}
+.para {
+    font-size: 16px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+  .button {
+    margin: 10px;
+    padding: 3px 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .button.active {
+    background-color: #19a849;
+  }
+
+
+
+.topContainer
+{
+    width: 100%;
+   display: flex;
+    
+   
+}
+.topContainer img
+{
+ width: 25%;
+margin: auto;
+    margin-right: 20%;
+ 
+ 
+}
+
+
+nav
+{
+    width: 100%;
+    height: auto;
+    background-color: #F8F8F8 !important;
+      
+}
+.topMenu
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+ol li
+{
+    width: 15%;
+    height: 3em;
+    margin-left: 1px;
+    
+}
+ol a {
+  display:block;
+  color:#000;
+    font-size: 1.3em;
+  text-decoration:none;
+  padding:0 5px;
+}
+
+ol > li > a
+{
+  color: #525252;
+    text-align: center;
+    display: block;
+    height: 100%;
+}
+
+
+ol > li > ul {
+  display:none;
+    list-style: none;
+    width: 100%;
+     background-color:#004500;
+    
+}
+
+ol > li > ul > li {
+ 
+    width: 100%;
+    height: auto;
+    margin-left: 1px;
+    position: relative;
+    z-index: 3;
+    
+
+}
+ol > li > ul > li > a
+{
+    color: #fff;
+    text-align: center;
+    display: block;
+    height: 2em;
+    z-index: 3;
+    
+    
+}
+ol > li > ul > li > a:hover
+{
+    background-color: #fff;
+    color:  #004500;
+    z-index: 4;
+    position: relative;
+}
+
+ol > li > a:hover {
+  background-color: #004500;
+    color: #fff;
+} 
+ol > li:hover > ul {
+  display:block;
+}
+
+
+
+                                <!-- Tu kończymy pracę nad MENU -->
+    <!-- Slider -->
+                                    
+.padding
+{
+    width: 100%;
+   
+}
+
+.wrapper
+{
+    width: 96%;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    z-index: -1;
+    
+}
+.wrapper img
+{
+    width: 100%;
+    height: 650px;
+    
+}
+#napis
+{
+    position: absolute;
+    z-index: 10;
+    background-color: #004500;
+    color: #fff;
+    width: 25%;
+    font-size: 2em;
+    font-family: 'ZCOOL XiaoWei', serif;
+    top: 250px;
+    right: 60px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+.content
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.article
+{
+    width: 20%;
+    margin-right: 15px;
+}
+.article span 
+{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+    display: block;
+    color: #004500;
+}
+.article figure 
+{
+    width: 15%;
+    margin: auto;
+}
+.article figure img
+{
+   display: block;
+    
+}
+.article p
+{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+        color: #909495;
+    font-weight: 300;
+    line-height: 1.86;
+    margin-top: 10px;
+}
+ 
+.LowerContent
+{
+    display: flex;
+    flex-wrap: wrap;
+    height: 700px;
+width: 96%;
+background-image: url("../img/deski.jpg");
+background-size: 96% 700px;
+   margin: 40px;
+    padding-top: 30px;
+    justify-content: space-around;
+}
+.propozycje
+{
+    color: #fff;
+    font-size: 40px;
+height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.box
+{
+    width: 20%;
+    height: 40%;
+    background-color: #004500;
+    
+}
+.box > div
+{
+    width: 100%;
+    height: 220px;
+    
+}
+.box > div > img
+{
+    width: 100%;
+    height: 100%;
+}
+.box p
+{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 2;
+}
+
+
+
+.box:hover
+{
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    box-shadow: 0 0 30px #FFF;
+}
+.contact
+{
+    width: 100%;
+    background-color: #004500;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+#skontaktuj
+{
+    width: 100%;
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+#dane, #napisz
+{
+    width: 20%;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+}
+.mniejsze
+{
+    font-size: 15px;
+}
+.stopka
+{
+    width: 100%;
+   background-color: #F8F8F8 !important;
+    padding-top: 40px;
+}
+.stopka p
+{
+    font-size: 20px;
+    text-align: center;
+    color:  #004500;
+
+}

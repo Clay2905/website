@@ -1,0 +1,74 @@
+
+.item-thumb
+{
+    width: 10%;
+}
+.item-thumb img
+{
+    width: 100%;
+}
+
+.table
+{
+    width: 70% !important;
+    margin: auto;
+}
+table
+{
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    
+}
+table td
+{
+    width: 10%;
+      border-bottom: 1px solid #525252 !important;
+    
+}
+table th
+{
+    width: 10%;
+}
+thead
+{
+    width: 60%;
+    margin-top: 40px;
+}
+tbody
+{
+    width: 60% !important;
+}
+.simpleCart_decrement
+{
+    float: right;
+    margin-right: 15px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    background-color: #dee2e6;
+    text-decoration: none;
+    line-height: 1;
+}
+.item-quantity
+{
+    width: 5%;
+    text-align: center;
+}
+.simpleCart_increment
+{
+     float: left;
+    margin-left: 15px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    background-color: #dee2e6;
+    text-decoration: none;
+    line-height: 1;
+}

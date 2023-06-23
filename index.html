@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>OgrodnictwoProjekt</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+         <!-- Style do slidera -->
+         
+        <link rel="stylesheet" href="css-slick/slick-theme.css">
+        <link rel="stylesheet" href="css-slick/slick.css">
+         <!--  ----------------  -->
+        
+        
+   
+        
+        
+        <link rel="stylesheet" href="style/koszyk_ikonka.css">
+        <link rel="stylesheet" href="style/main.css">
+       
+        
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+       
+    </head>
+    <body>
+<div class="container">
+    
+    
+   <!-- Całe menu górne -->
+    
+    <header>
+        
+    <div class="topContainer">
+        <img src="img/logo.png" style="margin-right: 20%;">
+        <div class="cartInfo"><a href="/" onClick="op1('cartPopover'); return false;" class="podgladkoszyka">
+            Podgląd koszyka
+            </a></div>
+
+        <button class="button" id="increase">Powieksz</button>
+        <button class="button" id="decrease">Zmniejsz</button>
+        <div class="slider-container">
+         <input type="range" min="1" max="100" value="50" class="slider" id="brightnessSlider">
+          
+          </div>
+          
+        
+        
+        <div id="cartPopover" style="display: none;">
+			
+					<div class="simpleCart_items"></div>
+					<div id="cartData" class="clearfix">
+						<div class="left"><strong>Przedmiotów: </strong><span class="simpleCart_quantity"></span></div>
+						<div class="right"><strong>W sumie: </strong><span class="simpleCart_total"></span></div>
+					</div>
+					<div id="popoverButtons" class="clearfix">
+						<a href="koszyk.html" class="hudbtn left">Wyświetl koszyk</a>
+						
+					</div>
+				</div>
+    </div>
+        
+    <nav>
+    <ol class="topMenu">
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="rosliny.html#produkty2">Centrum ogrodnicze</a>
+            <ul class="expandMenu">
+                <li><a href="rosliny.html#produkty2">Rośliny</a></li>
+                <li><a href="rosliny.html#produkty8">Nardzędzia ogrodnicze</a></li>
+                <li><a href="rosliny.html#produkty12">Meble ogrodowe</a></li>
+                <li><a href="rosliny.html#produkty16">Dekoracje ogrodowe</a></li>
+                <li><a href="rosliny.html#produkty18">Kamienie</a></li>
+            </ul>
+        </li>
+        <li><a href="ogrody.html">Ogrody</a></li>
+        <li><a href="index.html">Kontakt</a></li>
+        <li><a href="koszyk.html">Koszyk</a></li>
+    </ol>    
+    </nav>
+    </header>
+    
+    
+                <!-- Slider -->
+    <div class="padding">
+    <div class="wrapper slider-top">
+    
+    
+        <div><img src="img-slick/1.jpg"></div>
+        <div> <img src="img-slick/2.jpg"></div>
+        <div> <img src="img-slick/3.jpg"></div>
+    
+    
+    
+    </div>
+        <div id="napis">
+        OGRODY GABRYŚ
+        </div>
+      </div>  
+        
+     <!-- =============================== -->  
+    
+    
+    <!-- Kafelki pod sliderem-->  
+   
+    <div class="content">
+        
+        <div class="article">
+            <figure><img src="img/leaf.svg"></figure>
+        <span>Jakość</span>
+            <p class="para">Oferujemy wysokiej jakości usługi dla wszystkich, którzy chcą mieć piękny ogród. Gwarantujemy najwyższą jakość usługi i wykonanie jej zgodnie z Państwa życzeniem. Naszymi atutami są przede wszystkim: zebrane w ciągu kilkunastu lat działalności doświadczenie, wysoko wykwalifikowana kadra oraz najlepszy dostępny na rynku sprzęt i wyposażenie
+            </p>
+            
+        </div>
+ 
+    <div class="article">
+        <figure><img src="img/bolt.svg"></figure>
+        <span>Elegancja</span>
+        <p class="para">Nasze główne wysiłki koncentrujemy na tworzeniu wspaniałych wzorów krajobrazowych, które staną się źródłem satysfakcji i relaksu, zarówno właścicieli ogrodu jak i ich bliskich oraz gości. Wiemy, że piękny i zadbany ogród działa kojąco i budująco na przebywające w nim osoby, dlatego korzystamy wyłącznie z materiałów najwyższej jakości.
+        </p>
+        </div>
+        
+    <div class="article">
+         <figure><img src="img/smile-solid.svg"></figure>
+        <span>Wykonanie</span>
+        <p class="para">
+        
+        Ogród to nie tylko kwiaty, krzewy i drzewa. To również tarasy, ścieżki, pergole, oświetlenie, ogrodzenie i elementy ozdobne. Wszystkie te elementy oprócz odpowiedniego dobrania muszą cechować się trwałością, aby wymarzony ogród cieszył właścicieli przez lata swoim urokiem i zachęcał, aby każdą chwilę poświęcać na relaks i odpoczynek właśnie w ogrodzie
+        </p>
+        </div>
+                     
+        
+    </div>
+    
+    <!-- =================== -->
+    
+    <!-- Oferta -->
+    <div class="LowerContent"> 
+  
+    <p class="propozycje" id="para">Między innymi oferujemy: </p>
+    
+    <div class="box">
+        <div><img src="img/ogrod1.jpg"></div>
+        <p>Przycinanie trawników</p>
+    
+    </div>
+        
+    <div class="box">
+        <div><img src="img/ogrod2.jpg"> </div>
+        <p>Urządzanie ogrodów</p>
+    </div>
+        
+    <div class="box">
+      <div><img src="img/sadzonki.jpg"></div>
+        <p>Sprzedaż oraz konsultacje sadzonek</p>
+    </div>
+    
+    <div class="box">
+     <div><img src="img/akcesoria.jpeg"></div>
+        <p>Sprzedaż różnych akcesorii</p>
+    </div>
+    
+    
+    
+    </div>
+    
+    <!-- =================== -->
+    
+    <!-- Kontakt  -->
+    <div class="contact">
+    <p id="skontaktuj"  class="para" >Skontaktuj się z nami</p>
+    <p id="napisz"  class="para" >Napisz do nas<br>
+       <span class="mniejsze" ><br>Kgabrys2905@gmail.com <br><br>+48 888 356 311</span> </p>
+    <p id="dane" class="para" >Nasze dane<br>
+        <span class="mniejsze" ><br>Jakub Gabryś<br>Centrum Ogrody Gabryś <br>Chorzowska 5<br>44-100 Gliwice</span> </p>
+        
+    </div>
+    
+    
+    <!-- =================== -->
+    
+    
+    <!-- Mapy google -->
+ <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=zsti&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div>
+    <!-- =================== -->
+    
+    
+    
+    <!-- Stopka -->
+    
+    <footer class="stopka">
+    
+  <p class="para">© 2023 Jakub Gabryś</p>  
+    
+    
+    </footer>
+    
+    
+</div>
+       
+
+         <!-- JavaScript do slidera -->
+        <script type="text/javascript" src="js-slick/jquery.js"></script>
+        <script type="text/javascript" src="js-slick/slick.js"></script>
+        <script type="text/javascript" src="js-slick/script.js"></script>
+         <!-- ======================================================= -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+        <script src="simpleCart.js"></script>
+        
+        <script>
+            function op1(obj) {
+x=document.getElementById(obj);
+if(x.style.display == "none") x.style.display = "block";
+else x.style.display = "none"
+};    
+        
+        </script>
+<script src="font-size.js"></script> 
+        
+        
+    </body>
+</html>
